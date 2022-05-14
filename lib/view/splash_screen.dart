@@ -1,4 +1,7 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
+import 'package:lens/view/dashboard.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({Key? key}) : super(key: key);
@@ -10,6 +13,9 @@ class SplashScreen extends StatefulWidget {
 class _SplashScreenState extends State<SplashScreen> {
   @override
   void initState() {
+    Timer(const Duration(seconds: 2), () {
+      navigateToDashboard();
+    });
     super.initState();
   }
 
@@ -25,5 +31,11 @@ class _SplashScreenState extends State<SplashScreen> {
         ),
       ),
     );
+  }
+
+  void navigateToDashboard() {
+    Navigator.of(context).push(MaterialPageRoute(
+      builder: (context) => const Dashboard(),
+    ));
   }
 }
