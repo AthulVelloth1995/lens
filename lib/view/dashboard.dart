@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:lens/utils/custom_floating_action_button.dart';
 
 class Dashboard extends StatefulWidget {

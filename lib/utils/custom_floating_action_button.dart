@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:lens/const/colors.dart';
 
 class CustomFloatingActionButton extends StatefulWidget {
   final VoidCallback onTap1;

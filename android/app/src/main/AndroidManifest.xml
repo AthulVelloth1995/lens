@@ -2,6 +2,7 @@
     package="com.example.lens">
    <application
         android:label="lens"
+        android:usesCleartextTraffic="true"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity
